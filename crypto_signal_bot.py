@@ -1,9 +1,10 @@
 import requests
 import time
 
-# ===== CONFIG =====
-TELEGRAM_TOKEN = 8688692681:AAFeVYJxmVzrqWRpsr5ElhZL9yANv22iF84
-CHAT_ID = -1003088214813
+import os
+
+TELEGRAM_TOKEN = os.getenv(8688692681:AAFeVYJxmVzrqWRpsr5ElhZL9yANv22iF84)
+CHAT_ID = int(os.getenv(-1003088214813))
 CRYPTO_SYMBOLS = ["BTCUSDT", "ETHUSDT", "BNBUSDT"]  # Add more coins if you want
 INTERVAL = 300  # seconds between checks (5 minutes)
 PRICE_CHANGE_THRESHOLD = 0.01  # 1% change for BUY/SELL
